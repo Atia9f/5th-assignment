@@ -14,9 +14,6 @@ for (const seat of allSeatClass) {
         count2 = count2 + 1;
         seatCount.innerText = count2;
 
-        selectedSeat = 1;
-        nextButton();
-
         seat.disabled = true;
         if (seat.disabled === true) {
             seat.style.backgroundColor = '#1DD100';
@@ -65,6 +62,9 @@ for (const seat of allSeatClass) {
 
         const totalAmmount = document.getElementById('total-ammount');
         totalAmmount.innerText = totalSeatRent;
+
+        selectedSeat > 0;
+        nextButton();
     }
     )
 }
