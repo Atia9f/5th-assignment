@@ -14,6 +14,9 @@ for (const seat of allSeatClass) {
         count2 = count2 + 1;
         seatCount.innerText = count2;
 
+        selectedSeat = 1;
+        nextButton();
+
         seat.disabled = true;
         if (seat.disabled === true) {
             seat.style.backgroundColor = '#1DD100';
@@ -152,7 +155,7 @@ function couponApply() {
         const totalAmmount = document.getElementById('total-ammount');
         totalAmmount.innerText = totalDiscountPrice2;
 
-        
+
         couponInput.remove();
         couponButton.remove();
 
@@ -178,4 +181,7 @@ function nextButton() {
     }
 }
 
+function modalButton() {
+    window.location.reload();
+}
 
