@@ -170,7 +170,7 @@ numberButton.disabled = true;
 numberInput.addEventListener('input', nextButton);
 
 function nextButton() {
-    if (numberInput.value.length > 0) {
+    if (numberInput.value.length > 0 && !isNaN(numberInput.value) && selectedSeat > 0) {
         numberButton.disabled = false;
     } else {
         numberButton.disabled = true;
